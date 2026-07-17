@@ -1,0 +1,21 @@
+name: production-health
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  http-200:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify production URL
+        run: |
+          curl --fail --location \
+            --retry 20 \
+            --retry-delay 3 \
+            --retry-all-errors \
+            --connect-timeout 10 \
+            --max-time 20 \
+            https://apartment-volume-planner-jp.pages.dev/ > /dev/null
