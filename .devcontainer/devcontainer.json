@@ -1,0 +1,14 @@
+{
+  "name": "Apartment Volume Planner JP",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
+  "postCreateCommand": "npm ci",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": { "label": "Vite preview", "onAutoForward": "openPreview" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["eamodio.gitlens", "usernamehw.errorlens"]
+    }
+  }
+}
