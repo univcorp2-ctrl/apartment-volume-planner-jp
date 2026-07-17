@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.0",
+  "status": "illustrative-not-authoritative",
+  "rules": [
+    {
+      "id": "BSA-43-FRONTAGE",
+      "jurisdiction": "Japan",
+      "topic": "frontage",
+      "source": "https://laws.e-gov.go.jp/law/325AC0000000201",
+      "effectiveDate": "verify-at-runtime",
+      "implementation": "frontageWidth >= 2",
+      "notes": "Exceptions and road classifications require authority review."
+    },
+    {
+      "id": "BSER-23-STAIRS-BASELINE",
+      "jurisdiction": "Japan",
+      "topic": "stairs",
+      "source": "https://laws.e-gov.go.jp/law/325CO0000000338",
+      "effectiveDate": "verify-at-runtime",
+      "implementation": "width >= 0.75 && rise <= 0.23 && tread >= 0.15",
+      "notes": "Building use and scale can trigger stricter requirements."
+    }
+  ]
+}
