@@ -43,7 +43,7 @@ See [`docs/architecture.md`](docs/architecture.md) for the production target, in
 ## Run
 
 ```bash
-npm ci
+npm install
 npm run dev
 ```
 
