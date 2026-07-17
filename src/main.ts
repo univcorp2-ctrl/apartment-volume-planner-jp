@@ -154,7 +154,7 @@ function render(input: PlanInput): void {
 
 document.querySelector<HTMLFormElement>('#planner-form')?.addEventListener('submit', (event) => {
   event.preventDefault();
-  const form = event.currentTarget;
+  const form = event.currentTarget as HTMLFormElement;
   const data = new FormData(form);
   try {
     const input: PlanInput = {
