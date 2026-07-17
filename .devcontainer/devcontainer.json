@@ -1,7 +1,7 @@
 {
   "name": "Apartment Volume Planner JP",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
-  "postCreateCommand": "npm ci",
+  "postCreateCommand": "npm install",
   "forwardPorts": [5173],
   "portsAttributes": {
     "5173": { "label": "Vite preview", "onAutoForward": "openPreview" }
