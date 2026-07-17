@@ -3,7 +3,7 @@
 ## Local and Codespaces
 
 ```bash
-npm ci
+npm install
 npm run dev
 ```
 
